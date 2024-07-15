@@ -54,6 +54,7 @@
 	{disabled}
 	on:click={handleClick}
 	on:focus={handleFocus}
+	on:blur={handleBlur}
 	on:mouseenter={handleFocus}
 	on:mouseleave={handleBlur}
 	class="cell"
@@ -67,8 +68,8 @@
 
 	<Mark bind:opacity {value}></Mark>
 </button>
-<audio bind:this={clickAudio} src="../audio/click.wav" type="audio/wav"> </audio>
-<audio bind:this={errorAudio} src="../audio/error1.wav" type="audio/wav"> </audio>
+<audio bind:this={clickAudio} src="../audio/click.wav" type="audio/wav" preload="auto"> </audio>
+<audio bind:this={errorAudio} src="../audio/error1.wav" type="audio/wav" preload="auto"> </audio>
 
 <style>
 	.cell {
